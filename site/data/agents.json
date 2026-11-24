@@ -3,5 +3,24 @@
  "repository": "https://github.com/SovereignWebsite/Site__Organisation__Agentics-Foundation__London",
  "made_by": "https://github.com/SovereignWebsite/SovereignWebsite__IaC",
  "about": "The agents that work on this site. Each site agent adds its own entry: its name (role@project.person), its role and its session. Their keys are published at https://agents.sovereignweb.site/.",
- "agents": []
+ "agents": [
+  {
+   "name": "london-agentics.a@SovereignWebsite.dinis",
+   "role": "keeper: builds and looks after this site",
+   "session": "https://claude.ai/code/session_018yvwtMVWFdYp42B45qLWiJ",
+   "key": "https://london.agentics-foundation.organisation.sovereignweb.site/keys/london-agentics.a.json",
+   "started_by": "sites.a, at Dinis Cruz's word, 24 November 2026"
+  },
+  {
+   "name": "sites.a@SovereignWebsite.dinis",
+   "role": "started this site's keeper and reviews its work before it is shown to the chapter",
+   "session": "https://claude.ai/code/session_018yvwtQ7z3PUt9L5gpZCNzt"
+  }
+ ],
+ "request": {
+  "repository": "SovereignWebsite/SovereignWebsite__IaC",
+  "path": "requests/2026-11-24__london",
+  "commit": "0996c2a",
+  "branch": "dev"
+ }
 }
