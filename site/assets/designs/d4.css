@@ -1,0 +1,50 @@
+/* Design 4, Swiss grid: a strict grid, numbered sections, one signal red, lots of white. */
+:root{--bg:#fff;--fg:#111;--muted:#555;--red:#c8261a;--line:#111;--soft:#f2f2f2}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f0f;--fg:#f3f3f3;--muted:#b3b3b3;--red:#ff6a5c;--line:#f3f3f3;--soft:#1c1c1c}}
+body{background:var(--bg);color:var(--fg);font:17px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;counter-reset:sec}
+a{color:var(--fg);text-decoration-color:var(--red);text-decoration-thickness:2px;text-underline-offset:.18em}
+.top{display:grid;grid-template-columns:1fr 2fr;gap:1rem 2rem;max-width:68rem;margin:0 auto;padding:2.4rem 1rem 1rem;border-bottom:2px solid var(--line)}
+.top .name{font-weight:700;color:var(--fg);text-decoration:none;font-size:1.05rem}
+.own{display:flex;flex-wrap:wrap;gap:.25rem 2rem;font-size:1rem}
+.own a{text-decoration:none;font-weight:500}.own a:hover,.own a:focus-visible,.own a[aria-current]{color:var(--red);text-decoration:underline}
+main{max-width:68rem;margin:0 auto;padding:0 1rem 3rem}
+main>section{display:grid;grid-template-columns:1fr 2fr;gap:1rem 2rem;padding:2.2rem 0;border-bottom:1px solid var(--line)}
+main>section>*{grid-column:2}
+main>section::before{counter-increment:sec;content:counter(sec,decimal-leading-zero);grid-column:1;grid-row:1/span 9;font-size:clamp(3rem,8vw,6rem);font-weight:700;line-height:.85;color:var(--red);letter-spacing:-.04em}
+.hero::before{display:none!important;counter-increment:none!important}
+.hero{border-bottom:2px solid var(--line)!important}
+.hero-in{grid-column:1/-1!important}
+.mark{margin:0 0 1rem;font-size:.85rem;font-weight:700;color:var(--red)}
+h1{font-size:clamp(2.6rem,8vw,6.2rem);line-height:.95;letter-spacing:-.04em;font-weight:700;margin:0 0 1.5rem;max-width:14ch}
+.lead{font-size:1.3rem;line-height:1.4;max-width:34rem;margin:0 0 1rem}
+.src{font-size:.8rem;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.4rem 0}
+.button{display:inline-block;padding:.6rem 1.2rem;background:var(--red);color:#fff;font-weight:700;text-decoration:none;border:2px solid var(--red)}
+@media (prefers-color-scheme:dark){.button{color:#111}}
+.button.ghost{background:transparent;color:var(--fg);border-color:var(--fg)}
+.button:hover,.button:focus-visible{text-decoration:underline}
+h2{font-size:2rem;line-height:1.05;letter-spacing:-.02em;font-weight:700;margin:0 0 1rem}
+h3{font-size:1.15rem;font-weight:700;margin:.2rem 0 .3rem}
+p{margin:0 0 1rem}
+.feature-head{margin-bottom:.5rem}
+.facts{margin:0 0 1.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:0;border-top:2px solid var(--line)}
+.facts>div{padding:.7rem .8rem .8rem 0;border-bottom:1px solid var(--line)}
+.facts dt{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.facts dd{margin:.3rem 0 0}
+.gap{display:inline-block;background:var(--soft);padding:.15rem .5rem;font-size:.92rem;border-left:4px solid var(--red)}
+.gap-label{font-weight:700;margin-right:.3rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--line);margin:0 0 1rem}
+.card{padding:1rem 1rem 1rem 0}.card+.card{padding-left:1rem;border-left:1px solid var(--line)}
+.card-k{margin:0;font-size:.8rem;font-weight:700;color:var(--red)}
+.note{margin:2rem 0 0;padding:1rem 1.2rem;background:var(--soft);border-left:6px solid var(--red)}.note p{margin:0}
+ul.plain{padding-left:1.1rem}ul.plain li{margin:.4rem 0}
+footer{margin-top:2.5rem;font-size:14px;color:var(--muted);display:grid;gap:.4rem}
+.site-links{display:flex;flex-wrap:wrap;gap:.3rem 1.5rem}.site-links a{font-weight:700}
+@media (max-width:44rem){.top,main>section{grid-template-columns:1fr}main>section>*{grid-column:1}main>section::before{grid-row:auto;font-size:3rem}.cards{grid-template-columns:1fr}.card,.card+.card{padding:1rem 0;border-left:0;border-bottom:1px solid var(--line)}footer{font-size:15px}}
+/* round 2 */
+.hero{padding-top:3rem!important}
+main>section::before{font-variant-numeric:tabular-nums}
+@media (min-width:44rem){main>section:not(.hero){grid-template-columns:8rem 1fr}.top{grid-template-columns:auto 1fr}.own{justify-content:flex-end}}
+.note{grid-column:1/-1}
+/* round 3: numbers out of the grid flow, so no empty rows under short sections */
+@media (min-width:44.01rem){main>section:not(.hero){display:block;position:relative;padding-left:10rem}main>section:not(.hero)::before{position:absolute;left:0;top:2.2rem}}
+@media (max-width:44rem){main>section:not(.hero){display:block}main>section:not(.hero)::before{display:block;margin-bottom:.5rem}}

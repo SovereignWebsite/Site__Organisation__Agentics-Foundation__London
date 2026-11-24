@@ -1,0 +1,43 @@
+/* Design 1, Editorial: a printed programme. Serif type, warm paper, rules, one oxblood accent. */
+:root{--bg:#f7f3ea;--fg:#1f1b16;--muted:#5b534a;--accent:#8a2b2b;--line:#d9d0bf;--card:#fffdf7;--gapbg:#fbefd6;--gapfg:#6b4a00}
+@media (prefers-color-scheme:dark){:root{--bg:#18150f;--fg:#efe8da;--muted:#b4aa98;--accent:#e59a8a;--line:#3a342a;--card:#211d16;--gapbg:#3a2f14;--gapfg:#f2cf7c}}
+body{background:var(--bg);color:var(--fg);font:19px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+a{color:var(--accent)}
+.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 2rem;max-width:46rem;margin:0 auto;padding:2.6rem 1rem 1rem;border-bottom:3px double var(--line)}
+.top .name{font-weight:700;font-size:1.15rem;color:var(--fg);text-decoration:none;letter-spacing:.01em}
+.own{display:flex;flex-wrap:wrap;gap:.25rem 1.4rem;margin-left:auto;font-size:.95rem;font-style:italic}
+.own a{text-decoration:none}.own a:hover,.own a:focus-visible{text-decoration:underline}.own a[aria-current]{color:var(--fg)}
+main{max-width:46rem;margin:0 auto;padding:0 1rem 3rem}
+.mark{margin:0 0 .6rem;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-family:system-ui,sans-serif;font-weight:600}
+.hero{padding:3.5rem 0 2rem;text-align:center}
+h1{font-size:clamp(2.4rem,7vw,4rem);line-height:1.05;margin:0 0 1.2rem;font-weight:700;letter-spacing:-.01em}
+.hero-small h1{font-size:clamp(2.2rem,6vw,3.2rem)}
+.lead{font-size:1.25rem;font-style:italic;max-width:36rem;margin:0 auto 1.4rem;color:var(--fg)}
+.hero .lead{text-align:center}
+.src{font-size:.82rem;color:var(--muted);font-family:system-ui,sans-serif}
+.actions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin:1.2rem 0}
+.join .actions{justify-content:flex-start}
+.button{display:inline-block;padding:.5rem 1.2rem;background:var(--accent);color:var(--bg);text-decoration:none;font-family:system-ui,sans-serif;font-weight:600;font-size:.95rem;border:2px solid var(--accent)}
+.button.ghost{background:transparent;color:var(--accent)}
+.button:hover,.button:focus-visible{text-decoration:underline}
+h2{font-size:1.7rem;margin:0 0 .8rem;font-weight:700}
+h3{font-size:1.2rem;margin:.2rem 0 .4rem}
+p{margin:0 0 1rem}
+.feature{margin:2rem 0 3rem;padding:2rem;background:var(--card);border:1px solid var(--line);outline:1px solid var(--line);outline-offset:5px}
+.facts{display:grid;gap:0;margin:0 0 1.4rem;border-top:1px solid var(--line)}
+.facts>div{display:grid;grid-template-columns:11rem 1fr;gap:1rem;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.facts dt{font-weight:700}.facts dd{margin:0}
+.gap{font-family:system-ui,sans-serif;font-size:.9rem;color:var(--gapfg);background:var(--gapbg);padding:.1rem .5rem;border-left:3px solid var(--gapfg)}
+.gap-label{font-weight:700;margin-right:.3rem}
+.chapter{padding:2rem 0;border-top:3px double var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 0 1rem}
+.card{padding:0 1.2rem;border-left:1px solid var(--line)}.card:first-child{padding-left:0;border-left:0}
+.card-k{margin:0;font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.card p:last-child{font-size:.98rem;color:var(--muted)}
+.join{padding:2rem 0;border-top:1px solid var(--line)}
+.note{margin:0 0 2rem;padding:1rem 1.2rem;border:1px solid var(--accent);font-size:1rem}.note p{margin:0}
+.known{margin:2rem 0}
+ul.plain{padding-left:1.2rem}ul.plain li{margin:.4rem 0}
+footer{margin-top:2rem;padding-top:1.2rem;border-top:3px double var(--line);font:14px/1.6 system-ui,sans-serif;color:var(--muted)}
+.site-links{display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;margin:.6rem 0}.site-links a{font-weight:600}
+@media (max-width:40rem){.cards{grid-template-columns:1fr}.card,.card:first-child{padding:1rem 0;border-left:0;border-top:1px solid var(--line)}.facts>div{grid-template-columns:1fr;gap:.2rem}.feature{padding:1.2rem}.own{margin-left:0}footer{font-size:15px}}
