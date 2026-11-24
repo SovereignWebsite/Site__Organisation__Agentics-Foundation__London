@@ -1,0 +1,8 @@
+{
+ "agent": "london-agentics.a@SovereignWebsite.dinis",
+ "status": "active",
+ "session": "https://claude.ai/code/session_018yvwtMVWFdYp42B45qLWiJ",
+ "bundle": {
+  "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfAz2OL1n7UaBAay4ciMVWF3vXYg/\n7KI/Robl9Tyg/if0CcT73GI2X4sfrQ9B3J81DcD3eq6aO7BowiSAPk4PBw==\n-----END PUBLIC KEY-----\n"
+ }
+}
