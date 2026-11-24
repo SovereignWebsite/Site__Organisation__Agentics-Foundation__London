@@ -1,0 +1,62 @@
+/* Design 7, Swarm: in step with the Agentics Foundation's own look (cream, coral, condensed headings, monospace body,
+   the node grid, the terminal window, the [ ] brackets). No logo or wordmark: the chapter's branding stays theirs. */
+:root{--bg:#fff9f5;--bg2:#f6f1ec;--fg:#1a1a1a;--muted:#55504b;--coral:#b5402a;--coral-hi:#ff6b4a;--line:#e7ddd4;--card:#fff;
+  --head:"Barlow Condensed","Arial Narrow",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#151312;--bg2:#1c1917;--fg:#f4eee9;--muted:#b9b0a8;--coral:#ff7a5c;--coral-hi:#ff8a6e;--line:#332d29;--card:#1f1b19}}
+body{background:var(--bg);color:var(--fg);font:16.5px/1.7 var(--mono)}
+a{color:var(--coral);text-underline-offset:.2em}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 2rem;max-width:72rem;margin:0 auto;padding:2.2rem 1rem 1rem}
+.top .name{font:700 1.45rem/1 var(--head);color:var(--fg);text-decoration:none;text-transform:uppercase;letter-spacing:.01em}
+.own{display:flex;flex-wrap:wrap;gap:.25rem 1.6rem;margin-left:auto;font-size:.92rem}
+.own a{color:var(--fg);text-decoration:none;font-weight:600}.own a:hover,.own a:focus-visible{color:var(--coral);text-decoration:underline}.own a[aria-current]{color:var(--coral)}
+main{max-width:72rem;margin:0 auto;padding:0 1rem 3rem}
+em{font-style:normal;color:var(--coral)}
+.br{color:var(--coral)}
+.mark{margin:0 0 1rem;font:600 .8rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hero{position:relative;margin:0 calc(50% - 50vw);padding:5rem max(1rem,calc(50vw - 36rem)) 5rem;overflow:hidden;text-align:center;border-bottom:1px solid var(--line)}
+.hero .net{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.net line{stroke:var(--line);stroke-width:1.2}
+.net line.live{stroke:var(--coral-hi);stroke-width:1.6;stroke-dasharray:6 10;animation:flow 2.4s linear infinite;opacity:.75}
+.net circle{fill:#b5aca4}.net circle.lead{fill:var(--coral-hi);animation:pulse 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes flow{to{stroke-dashoffset:-32}}@keyframes pulse{50%{transform:scale(1.5);opacity:.6}}
+@media (prefers-reduced-motion:reduce){.net line.live,.net circle.lead{animation:none}}
+.hero-in{position:relative;z-index:1;max-width:46rem;margin:0 auto;padding:2rem 1.5rem;background:radial-gradient(closest-side,var(--bg) 70%,transparent)}
+h1{font:700 clamp(2.8rem,8vw,5.4rem)/.98 var(--head);letter-spacing:-.01em;margin:0 0 1.2rem}
+.hero-small h1{font-size:clamp(2.6rem,7vw,4.4rem)}
+.lead{font-size:1.05rem;color:var(--muted);margin:0 auto 1.4rem;max-width:40rem}
+.src{font-size:.78rem;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.4rem 0}.hero .actions{justify-content:center}
+.button{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.4rem;border-radius:.6rem;background:var(--coral);color:#fff;font:600 .95rem/1.2 var(--mono);text-decoration:none;border:2px solid var(--coral)}
+@media (prefers-color-scheme:dark){.button{color:#1a1a1a}}
+.button::after{content:"\203A";font-size:1.2em}
+.button.ghost{background:transparent;color:var(--coral)}
+.button:hover,.button:focus-visible{text-decoration:underline}
+h2{font:700 clamp(2rem,4.5vw,3rem)/1.02 var(--head);margin:0 0 1rem;text-align:center}
+.feature h2,.join h2,.known h2{text-align:left}
+h3{font:700 1.5rem/1.1 var(--head);margin:.3rem 0 .4rem}
+p{margin:0 0 1rem}
+.win{margin:3.5rem auto;max-width:56rem;border:1px solid var(--line);border-radius:1.2rem;background:var(--bg2);box-shadow:0 30px 60px -40px rgba(224,87,58,.45);overflow:hidden}
+.win-bar{display:flex;align-items:center;gap:.45rem;padding:.8rem 1.1rem;border-bottom:1px solid var(--line)}
+.win-bar span{width:.75rem;height:.75rem;border-radius:50%;background:#ff5f57}.win-bar span:nth-child(2){background:#febc2e}.win-bar span:nth-child(3){background:#28c840}
+.win-bar code{margin-left:.6rem;font:.8rem var(--mono);color:var(--muted)}
+.win-body{padding:2rem 2.2rem}
+.facts{margin:0 0 1.4rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:.8rem}
+.facts>div{padding:.9rem 1rem;border-radius:.8rem;background:var(--card);border:1px solid var(--line)}
+.facts dt{font:700 1.15rem/1.2 var(--head);margin-bottom:.35rem}.facts dd{margin:0}
+.gap{display:block;font-size:.85rem;color:var(--muted)}
+.gap-label{display:inline-block;margin:0 .35rem .2rem 0;padding:0 .45rem;border-radius:.3rem;border:1px dashed var(--coral);color:var(--coral);font-weight:600}
+.chapter{padding:3rem 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 1rem}
+.card{padding:1.5rem;border-radius:1.2rem;background:var(--bg2);border:1px solid var(--line)}
+.card-k{margin:0;font-size:.78rem;font-weight:600;color:var(--coral);text-transform:uppercase;letter-spacing:.06em}
+.card p:last-child{font-size:.92rem;color:var(--muted);margin:0}
+.join{padding:2.4rem;border-radius:1.2rem;background:var(--fg);color:var(--bg)}
+.join a:not(.button){color:var(--coral-hi)}.join .button.ghost{color:var(--bg);border-color:var(--bg)}
+.note{margin:2.5rem auto 0;max-width:56rem;padding:1rem 1.2rem;border-radius:.8rem;border:1px dashed var(--coral);font-size:.95rem}.note p{margin:0}
+.known{max-width:56rem;margin:2.5rem auto}
+ul.plain{list-style:none;padding:0}ul.plain li{position:relative;padding-left:1.4rem;margin:.6rem 0}ul.plain li::before{content:"";position:absolute;left:0;top:.62em;width:.5rem;height:.5rem;border-radius:50%;background:var(--coral)}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.site-links{display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;margin:.6rem 0}.site-links a{font-weight:600}
+@media (max-width:44rem){.hero{padding:3rem 1rem}.cards{grid-template-columns:1fr}.win-body{padding:1.3rem}.own{margin-left:0}.join{padding:1.5rem}footer{font-size:15px}}
+/* the join band is always near-black, in light and dark, so its coral stays readable */
+.join{background:#1a1a1a;color:#fff9f5;border:1px solid var(--line)}.join em,.join a:not(.button){color:#ff7a5c}.join .button.ghost{color:#fff9f5;border-color:#fff9f5}
