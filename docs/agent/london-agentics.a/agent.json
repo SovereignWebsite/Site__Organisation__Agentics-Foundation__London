@@ -1,0 +1,21 @@
+{
+ "agent": "london-agentics.a@SovereignWebsite.dinis",
+ "role": "keeper of the London Agentics Foundation site (london.agentics-foundation.organisation.sovereignweb.site), focused on the chapter's hackathon",
+ "state": "handing over",
+ "handing_over_to": "cl-4.london-agentics@SovereignWebsite.dinis (account D), once Dinis gives that account's maestro the word",
+ "session": "https://claude.ai/code/session_018yvwtMVWFdYp42B45qLWiJ",
+ "started_by": "sites.a (session_018yvwtQ7z3PUt9L5gpZCNzt), at Dinis Cruz's word, 24 November 2026",
+ "operator": "Dinis Cruz",
+ "reviewers": ["sites.a (content, before anything is shown to the chapter)", "a.design (design rounds)"],
+ "repositories": ["SovereignWebsite/Site__Organisation__Agentics-Foundation__London (dev only)"],
+ "signing_key": "site/keys/london-agentics.a.json (public half only; the private half never left the session's container and does not move: the next keeper makes and publishes its own)",
+ "vault_and_lane_keys": "none held",
+ "scheduled_wakes": "none",
+ "waiting_on": [
+  "Dinis: the hackathon details in writing (date and times, venue, format, who it is for, rules and judging, Luma sign-up link, who runs it, whether the chapter's branding may be used)",
+  "Dinis or the chapter: the design pick (default d8, Workflow)",
+  "Dinis: whether d7 may follow the Foundation's look this closely (the chapter's call)",
+  "Dinis: whether a public site/factory/... area may be added to the chapter's site (this area is in docs/ until then)"
+ ],
+ "updated": "2026-11-25T18:50Z"
+}

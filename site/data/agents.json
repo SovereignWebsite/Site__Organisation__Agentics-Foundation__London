@@ -9,7 +9,9 @@
    "role": "keeper: builds and looks after this site",
    "session": "https://claude.ai/code/session_018yvwtMVWFdYp42B45qLWiJ",
    "key": "https://london.agentics-foundation.organisation.sovereignweb.site/keys/london-agentics.a.json",
-   "started_by": "sites.a, at Dinis Cruz's word, 24 November 2026"
+   "started_by": "sites.a, at Dinis Cruz's word, 24 November 2026",
+   "status": "handing over to cl-4.london-agentics@SovereignWebsite.dinis (account D), 25 November 2026",
+   "handover": "https://github.com/SovereignWebsite/Site__Organisation__Agentics-Foundation__London/blob/dev/docs/agent/london-agentics.a/restart.md"
   },
   {
    "name": "sites.a@SovereignWebsite.dinis",
