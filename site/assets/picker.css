@@ -22,3 +22,9 @@
 .pk-panel .pk-tag{display:inline-block;margin-left:.3rem;padding:0 .4rem;border-radius:999px;background:var(--pk-hi);color:var(--pk-bg);font-size:.7rem;font-weight:700;vertical-align:middle}
 .pk-panel .pk-now{color:var(--pk-hi);font-weight:700}
 @media print{.pick-design{display:none}}
+/* round 5: five featured designs, the rest folded under "Earlier rounds" */
+.pk-old{margin-top:1rem;border-top:1px solid var(--pk-line);padding-top:.7rem}
+.pk-old>summary{cursor:pointer;font-weight:600;font-size:.88rem;color:var(--pk-muted);list-style:none}
+.pk-old>summary::-webkit-details-marker{display:none}
+.pk-old>summary::after{content:" \25BE"}.pk-old[open]>summary::after{content:" \25B4"}
+.pk-old ul{margin-top:.8rem;grid-template-columns:repeat(auto-fill,minmax(10rem,1fr))}

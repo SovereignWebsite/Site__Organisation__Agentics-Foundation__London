@@ -18,3 +18,11 @@
 .design-banner{display:block;margin:0;padding:.45rem 1rem;font:14px/1.5 system-ui,sans-serif;background:#1d1d1b;color:#fff;text-align:center}.design-banner a{color:#fff}
 .design-banner~.family-credit{top:2.6rem}
 main a,main code{overflow-wrap:anywhere}dl.facts>div{margin:0}
+/* round 5: on phones the credit sits in the flow under the design banner, not over it (a.design review, 25 Nov 2026) */
+@media (max-width:40rem){
+  .design-banner~.family-credit{position:relative;top:auto;right:auto;display:flex;justify-content:flex-end;padding:.35rem .75rem 0;background:transparent}
+  .design-banner~.family-credit ul{right:.75rem}
+  .top .own{gap:.2rem 1rem!important;font-size:.9rem!important;flex-wrap:nowrap!important;white-space:nowrap}
+}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:40rem){.design-banner~.family-credit{--fam-fg:#d0d0d0;--fam-strong:#fff;--fam-bg:#1d1d1b;background:#1d1d1b;padding-bottom:.35rem}}

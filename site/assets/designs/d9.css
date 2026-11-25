@@ -54,3 +54,5 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-
 .site-links{display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;margin:.6rem 0}.site-links a{font-weight:700}
 @media (max-width:60rem){.board{grid-template-columns:1fr 1fr}.panel-agents{grid-template-columns:1fr}.roster{grid-column:1;grid-row:auto}}
 @media (max-width:40rem){.board{grid-template-columns:1fr}.panel-mission,.panel-wide{grid-column:auto;grid-row:auto}.roster li,.pending li{grid-template-columns:1fr;gap:.1rem}.own{margin-left:0}footer{font-size:15px}}
+/* round 5: on phones the mission panel reaches the first screen */
+@media (max-width:40rem){.hero{padding:1.2rem 0 .5rem}h1{font-size:2.1rem}.lead{font-size:1rem}.hero .actions{margin:.8rem 0}}

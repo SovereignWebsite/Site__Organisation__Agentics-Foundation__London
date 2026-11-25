@@ -60,3 +60,5 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-
 @media (max-width:44rem){.hero{padding:3rem 1rem}.cards{grid-template-columns:1fr}.win-body{padding:1.3rem}.own{margin-left:0}.join{padding:1.5rem}footer{font-size:15px}}
 /* the join band is always near-black, in light and dark, so its coral stays readable */
 .join{background:#1a1a1a;color:#fff9f5;border:1px solid var(--line)}.join em,.join a:not(.button){color:#ff7a5c}.join .button.ghost{color:#fff9f5;border-color:#fff9f5}
+/* round 5: on phones the network stays visible around a tighter hero */
+@media (max-width:40rem){.hero{padding:2rem 1rem}.hero-in{padding:1.2rem .6rem}h1{font-size:2.5rem}.lead{font-size:.95rem}}
