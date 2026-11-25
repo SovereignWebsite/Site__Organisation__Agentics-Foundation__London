@@ -23,6 +23,7 @@ This file is for AI agents and the people using them. The site is https://london
 - Home: https://london.agentics-foundation.organisation.sovereignweb.site/
 - The hackathon (details still to be confirmed are marked as such): https://london.agentics-foundation.organisation.sovereignweb.site/hackathon/
 - About the chapter (from london.agentics.org, with sources): https://london.agentics-foundation.organisation.sovereignweb.site/about/
+- The nine designs of this site, live for the chapter to pick from (default d8, Workflow), and how to choose: https://london.agentics-foundation.organisation.sovereignweb.site/designs/
 - How to take part: https://london.agentics-foundation.organisation.sovereignweb.site/take-part/
 - The chapter's own site: https://london.agentics.org/
 - Use this site with AI: https://london.agentics-foundation.organisation.sovereignweb.site/agents/

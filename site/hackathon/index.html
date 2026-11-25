@@ -21,7 +21,9 @@
 <meta name="twitter:description" content="The London Agentics hackathon showing examples of Sovereign Websites and AgentiCCells: what is known, and what is still to be confirmed.">
 <meta name="twitter:image" content="https://london.agentics-foundation.organisation.sovereignweb.site/assets/share/card-1200x630.jpg">
 <link rel="canonical" href="https://london.agentics-foundation.organisation.sovereignweb.site/hackathon/">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/base.css">
+<link rel="stylesheet" href="/assets/designs/d8.css">
+<link rel="stylesheet" href="/assets/picker.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -49,37 +51,66 @@
     <a href="/about/">About the chapter</a>
     <a href="/take-part/">Take part</a>
   </nav>
+  <details class="pick-design">
+  <summary>Choose a design</summary>
+  <div class="pk-panel">
+    <p class="pk-intro">Nine designs of this site, for the chapter to pick from. Each is the same content; the default is d8, Workflow, until the chapter chooses. <a href="/designs/">About the designs</a></p>
+    <ul>
+      <li><a href="/designs/d1/"><img src="/assets/designs/thumbs/d1.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d1, Editorial</strong><span>A printed programme: serif and warm paper</span></a></li>
+      <li><a href="/designs/d2/"><img src="/assets/designs/thumbs/d2.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d2, Poster</strong><span>A dark event poster, big type, one lime</span></a></li>
+      <li><a href="/designs/d3/"><img src="/assets/designs/thumbs/d3.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d3, Terminal</strong><span>An engineer's console in monospace</span></a></li>
+      <li><a href="/designs/d4/"><img src="/assets/designs/thumbs/d4.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d4, Swiss grid</strong><span>Numbered sections, one red, lots of white</span></a></li>
+      <li><a href="/designs/d5/"><img src="/assets/designs/thumbs/d5.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d5, Community</strong><span>Soft colours and rounded cards</span></a></li>
+      <li><a href="/designs/d6/"><img src="/assets/designs/thumbs/d6.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d6, Signal</strong><span>Poster energy on a Swiss grid</span></a></li>
+      <li><a href="/designs/d7/"><img src="/assets/designs/thumbs/d7.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d7, Swarm</strong><span>The Foundation's look, with a live agent network</span></a></li>
+      <li><a href="/designs/d8/" aria-current="page"><img src="/assets/designs/thumbs/d8.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d8, Workflow <span class="pk-tag">Default</span></strong><span>The hackathon as an agent run</span><span class="pk-now">You are here</span></a></li>
+      <li><a href="/designs/d9/"><img src="/assets/designs/thumbs/d9.jpg" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>d9, Mission control</strong><span>A dashboard, with the agents behind this site</span></a></li>
+    </ul>
+  </div>
+</details>
 </header>
 <main id="main">
-<div class="mark">Hackathon</div>
-<h1>The London hackathon</h1>
-<p class="lead">A hackathon run with the London chapter of the Agentics Foundation, showing examples of Sovereign Websites and AgentiCCells.</p>
-
-<div class="note" role="note">
-  <p><strong>Draft.</strong> The chapter and Dinis Cruz agreed this hackathon on a call on 24 November 2026. The details below marked "To be confirmed" have not been published yet. Nothing on this page is a date, a venue or a rule until it says so.</p>
-</div>
-
-<h2>What we know</h2>
-<ul class="plain">
-  <li>It is planned for the next few weeks, after a test run.</li>
-  <li>It shows examples of <a href="https://sovereignwebsite.ai/">Sovereign Websites</a>: websites whose owners hold the files, the history and the address, and can move them anywhere.</li>
-  <li>It shows examples of <a href="https://agenticcells.ai/">AgentiCCells</a>.</li>
-</ul>
-
-<h2>The details</h2>
-<dl class="facts">
-  <dt>Date and time</dt><dd><span class="gap">To be confirmed: not yet published</span></dd>
-  <dt>Venue</dt><dd><span class="gap">To be confirmed: not yet published</span></dd>
-  <dt>Format</dt><dd><span class="gap">To be confirmed: in person, online or both; how long it runs</span></dd>
-  <dt>Who it is for</dt><dd><span class="gap">To be confirmed: not yet published</span></dd>
-  <dt>What to bring</dt><dd><span class="gap">To be confirmed: not yet published</span></dd>
-  <dt>Rules and judging</dt><dd><span class="gap">To be confirmed: not yet published</span></dd>
-  <dt>Sign up</dt><dd><span class="gap">To be confirmed: the event's Luma link</span></dd>
-</dl>
-
-<h2>Until then</h2>
-<p>Chapter events are listed on its <a href="https://lu.ma/calendar/cal-G5qDYRTO06rtvbs">Luma calendar</a>, as the chapter's own site shows them. When the hackathon is published there, this page will link to it.</p>
-<p>To hear about it first, <a href="/take-part/">take part in the chapter</a>.</p>
+<section class="hero flow hero-small" aria-labelledby="h1">
+  <div class="hero-in">
+    <p class="mark">Hackathon</p>
+    <h1 id="h1">The London hackathon</h1>
+    <p class="lead">A hackathon with the London chapter of the Agentics Foundation, showing examples of Sovereign Websites and AgentiCCells.</p>
+  </div>
+  <div class="term">
+    <div class="term-bar" aria-hidden="true"><span></span><span></span><span></span><code>agent run: london-hackathon</code></div>
+    <p class="term-cmd" aria-hidden="true">$ run london-hackathon --show-gaps</p>
+    <ol class="trace" aria-label="The hackathon, as a workflow">
+      <li class="t-done"><span class="t-ic" aria-hidden="true"></span><span class="t-sr">Done:</span> Agreed with the London chapter, 24 November 2026</li>
+      <li class="t-done"><span class="t-ic" aria-hidden="true"></span><span class="t-sr">Done:</span> This site built, signed and checked by agents</li>
+      <li class="t-next"><span class="t-ic" aria-hidden="true"></span><span class="t-sr">Planned:</span> A test run first</li>
+      <li class="t-wait"><span class="t-ic" aria-hidden="true"></span><span class="t-sr">To be confirmed:</span> Date and time</li>
+      <li class="t-wait"><span class="t-ic" aria-hidden="true"></span><span class="t-sr">To be confirmed:</span> Venue</li>
+      <li class="t-wait"><span class="t-ic" aria-hidden="true"></span><span class="t-sr">To be confirmed:</span> Sign-up link on Luma</li>
+    </ol>
+    <p class="term-cur" aria-hidden="true">waiting for the organisers</p>
+  </div>
+</section>
+<div class="note" role="note"><p><strong>Draft.</strong> The steps marked "To be confirmed" have not been published yet. The chapter and Dinis Cruz agreed the hackathon on a call on 24 November 2026.</p></div>
+<section class="pipeline" aria-labelledby="dt">
+  <h2 id="dt">The hackathon, as a workflow</h2>
+  <ol class="steps steps-list">
+    <li class="step step-done"><p class="step-k"><span class="st st-done"><span class="st-dot" aria-hidden="true"></span><span class="st-k">Done</span> </span></p><h3>Agreed</h3><p>with the London chapter on a call, 24 November 2026</p></li>
+    <li class="step step-done"><p class="step-k"><span class="st st-done"><span class="st-dot" aria-hidden="true"></span><span class="st-k">Done</span> </span></p><h3>Shows</h3><p>examples of <a href="https://sovereignwebsite.ai/">Sovereign Websites</a> and <a href="https://agenticcells.ai/">AgentiCCells</a></p></li>
+    <li class="step step-next"><p class="step-k"><span class="st st-next"><span class="st-dot" aria-hidden="true"></span><span class="st-k">Planned</span> </span></p><h3>Test run</h3><p>before the hackathon</p></li>
+    <li class="step step-wait"><p class="step-k"><span class="st st-wait"><span class="st-dot" aria-hidden="true"></span><span class="st-k">To be confirmed</span> </span></p><h3>Date and time</h3><p>not yet published</p></li>
+    <li class="step step-wait"><p class="step-k"><span class="st st-wait"><span class="st-dot" aria-hidden="true"></span><span class="st-k">To be confirmed</span> </span></p><h3>Venue</h3><p>not yet published</p></li>
+    <li class="step step-wait"><p class="step-k"><span class="st st-wait"><span class="st-dot" aria-hidden="true"></span><span class="st-k">To be confirmed</span> </span></p><h3>Format</h3><p>in person, online or both; how long it runs</p></li>
+    <li class="step step-wait"><p class="step-k"><span class="st st-wait"><span class="st-dot" aria-hidden="true"></span><span class="st-k">To be confirmed</span> </span></p><h3>Who it is for</h3><p>not yet published</p></li>
+    <li class="step step-wait"><p class="step-k"><span class="st st-wait"><span class="st-dot" aria-hidden="true"></span><span class="st-k">To be confirmed</span> </span></p><h3>What to bring</h3><p>not yet published</p></li>
+    <li class="step step-wait"><p class="step-k"><span class="st st-wait"><span class="st-dot" aria-hidden="true"></span><span class="st-k">To be confirmed</span> </span></p><h3>Rules and judging</h3><p>not yet published</p></li>
+    <li class="step step-wait"><p class="step-k"><span class="st st-wait"><span class="st-dot" aria-hidden="true"></span><span class="st-k">To be confirmed</span> </span></p><h3>Sign up</h3><p>the event's Luma link</p></li>
+  </ol>
+</section>
+<section class="join" aria-labelledby="ut">
+  <h2 id="ut">Until then</h2>
+  <p>Chapter events are listed on its <a href="https://lu.ma/calendar/cal-G5qDYRTO06rtvbs">Luma calendar</a>, as the chapter's own site shows them. When the hackathon is published there, this page will link to it.</p>
+  <p class="actions"><a class="button" href="/take-part/">Take part in the chapter</a></p>
+</section>
 <footer>
 <p class="built">An independent site about the London chapter of the Agentics Foundation, built from the chapter's own site, <a href="https://london.agentics.org/">london.agentics.org</a>, with the chapter leaders' agreement. The chapter's name and branding are theirs. Built by london-agentics.a, an AI agent working for Dinis Cruz, with the <a href="https://sovereignwebsite.ai/">Sovereign Website</a> pipeline: <a href="/admin/">how this site was made</a>.</p>
 <nav class="site-links" aria-label="About this site">
@@ -88,7 +119,8 @@
   <a href="/admin/">How this site was made</a>
   <a href="/policy/">How this site is governed</a>
 </nav>
-A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Organisation__Agentics-Foundation__London">github.com/SovereignWebsite/Site__Organisation__Agentics-Foundation__London</a>.</footer>
+<p class="made">A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Organisation__Agentics-Foundation__London">github.com/SovereignWebsite/Site__Organisation__Agentics-Foundation__London</a>.</p>
+</footer>
 </main>
 </body>
 </html>
