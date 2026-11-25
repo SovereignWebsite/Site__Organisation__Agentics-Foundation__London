@@ -62,3 +62,10 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-
 .join{background:#1a1a1a;color:#fff9f5;border:1px solid var(--line)}.join em,.join a:not(.button){color:#ff7a5c}.join .button.ghost{color:#fff9f5;border-color:#fff9f5}
 /* round 5: on phones the network stays visible around a tighter hero */
 @media (max-width:40rem){.hero{padding:2rem 1rem}.hero-in{padding:1.2rem .6rem}h1{font-size:2.5rem}.lead{font-size:.95rem}}
+/* round 6: on phones the network is a solid band above the heading, not a watermark */
+@media (max-width:40rem){
+  .hero{padding:0 1rem 2rem}
+  .hero .net{position:relative;inset:auto;display:block;width:calc(100% + 2rem);height:150px;margin:0 -1rem 1rem;background:#1a1a1a}
+  .hero .net line{stroke:#3a3431}.hero .net circle{fill:#6b625c}.hero .net circle.lead{fill:#ff6b4a}.hero .net line.live{stroke:#ff6b4a}
+  .hero-in{background:none;padding:0}
+}
